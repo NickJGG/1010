@@ -45,6 +45,8 @@
     <Compile Include="Game1.cs" />
     <Compile Include="GameMouse.cs" />
     <Compile Include="GameObject.cs" />
+    <Compile Include="ObstacleCreationBlock.cs" />
+    <Compile Include="PlayBlock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Save.cs" />

@@ -7,16 +7,24 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace _1010 {
     public class SceneBlockCreation : Scene {
-        public SceneBlockCreation(SceneManager manager) : base("Block Creation") {
+        public SceneBlockCreation() : base("Block Creation") {
+            Block = new ObstacleCreationBlock(new Point(12));
+
             Camera.Zoom = 1f;
         }
 
         public override void Update(GameTime gt) {
+            Block.Update(gt);
+
             base.Update(gt);
         }
 
         public override void Draw(SpriteBatch sb) {
+            Block.Draw(sb);
+
             base.Draw(sb);
         }
+
+        public ObstacleCreationBlock Block { get; set; }
     }
 }

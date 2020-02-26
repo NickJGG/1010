@@ -1,66 +1,62 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System;
 
 namespace _1010 {
     public class Bit : GameObject {
-        public Bit(Color color, Point coords, Block block) {
-            Coordinates = coords;
-            RealCoordinates = coords;
-
-            Position = Mouse.Position;
-            DrawPosition = Position;
-
+        public Bit(Color color, Point coords, PlayBlock block) {
             Color = color;
-
             Block = block;
+
+            LocalCoordinates = coords;
+
+            Position = Mouse.Position + (LocalCoordinates.ToVector2() * (Block.BlockSize.ToVector2() + new Vector2(Block.Spacing)));
+            DrawPosition = Position;
         }
 
         public void Update(GameTime gt) {
-            if (!Placed)
-                Position = Mouse.Position + (Coordinates.ToVector2() * new Vector2(Block.BlockSize.X + Block.Spacing, Block.BlockSize.Y + Block.Spacing));
-               
-            DrawPosition -= (DrawPosition - Position) * 15 * (float) gt.ElapsedGameTime.TotalSeconds;
-        }
-
-        public void Draw(SpriteBatch sb) {
-            int padding = 2;
-
-            if (!Placed) {
-                sb.Draw(BlankPixel, DrawPosition + new Vector2(-padding), new Rectangle(Point.Zero, Block.BlockSize + new Point(padding * 2)), Color.White);
-                //sb.Draw(BlankPixel, RealPosition, new Rectangle(Point.Zero, Block.BlockSize), new Color(Color, .9f));
-            }
-            
-            sb.Draw(BlankPixel, DrawPosition, new Rectangle(Point.Zero, Block.BlockSize), Color);
-            //sb.Draw(BlankPixel, Coordinates.ToVector2() * Block.Size.ToVector2(), new Rectangle(Point.Zero, Block.Size), Color.FromNonPremultiplied(255, 0, 0, 120));
-        }
-
-        public bool Placed { get; set; }
-
-        public Point Coordinates { get; set; }
-        public Point RealCoordinates {
-            get {
-                //Vector2 temp = new Vector2(((Mouse.Position.X - Block.Position.X) - (Mouse.Position.X - Block.Position.X) % Block.BlockSize.X) / Block.BlockSize.X, ((Mouse.Position.Y - Block.Position.Y) - (Mouse.Position.Y - Block.Position.Y) % Block.BlockSize.Y) / Block.BlockSize.Y).ToPoint() + Coordinates;
-
-                return new Vector2(((Mouse.Position.X - Block.Position.X) - (Mouse.Position.X - Block.Position.X) % Block.BlockSize.X) / Block.BlockSize.X, ((Mouse.Position.Y - Block.Position.Y) - (Mouse.Position.Y - Block.Position.Y) % Block.BlockSize.Y) / Block.BlockSize.Y).ToPoint() + Coordinates;
-            }
-            set {
+            if (!FullyPlaced) {
+                if (!Placed)
+                    Position = Mouse.Position + (LocalCoordinates.ToVector2() * (Block.BlockSize.ToVector2() + new Vector2(Block.Spacing)));
+                else if (DrawPosition - Position == Vector2.Zero)
+                    FullyPlaced = true;
                 
+                DrawPosition -= (DrawPosition - Position) * 25 * (float) gt.ElapsedGameTime.TotalSeconds;
+            }
+        }
+
+        public void DrawHover(SpriteBatch sb) {
+            if (!Placed) {
+                sb.Draw(BlankPixel, DrawPosition - new Vector2(Block.Spacing), new Rectangle(Point.Zero, Block.BlockSize + new Point(Block.Spacing * 2)), Color.White);
+
+                if (Block.CanPlaceBits())
+                    sb.Draw(BlankPixel, PlacedPosition, new Rectangle(Point.Zero, Block.BlockSize), new Color(Color, .7f));
+            }
+        }
+        public void Draw(SpriteBatch sb) {
+            sb.Draw(BlankPixel, DrawPosition, new Rectangle(Point.Zero, Block.BlockSize), Color);
+        }
+
+        public bool FullyPlaced { get; set; } = false;
+        public bool Placed { get; set; } = false;
+
+        public Point LocalCoordinates { get; set; }
+        public Point Coordinates {
+            get {
+                return new Vector2(((Mouse.Position.X - Block.Position.X) - (Mouse.Position.X - Block.Position.X) % (Block.BlockSize.X + Block.Spacing)) / (Block.BlockSize.X + Block.Spacing), ((Mouse.Position.Y - Block.Position.Y) - (Mouse.Position.Y - Block.Position.Y) % (Block.BlockSize.Y + Block.Spacing)) / (Block.BlockSize.Y + Block.Spacing)).ToPoint() + LocalCoordinates;
             }
         }
 
         public Vector2 Position { get; set; }
         public Vector2 DrawPosition { get; set; }
-        public Vector2 RealPosition {
+        public Vector2 PlacedPosition {
             get {
-                return Block.Position + new Vector2(Block.Spacing + (Block.BlockSize.X + Block.Spacing) * RealCoordinates.X, Block.Spacing + (Block.BlockSize.Y + Block.Spacing) * RealCoordinates.Y);
+                //return Position - new Vector2((Position.X - Block.Position.X) % (Block.BlockSize.X + Block.Spacing), (Position.Y - Block.Position.Y) % (Block.BlockSize.Y + Block.Spacing));
+                return Block.Position + new Vector2(Block.Spacing + (Block.BlockSize.X + Block.Spacing) * Coordinates.X, Block.Spacing + (Block.BlockSize.Y + Block.Spacing) * Coordinates.Y);
             }
         }
 
-        public Rectangle Hitbox {
-            get { return new Rectangle(Position.ToPoint() + Coordinates * Block.BlockSize, Block.BlockSize); }
-        }
-
-        public Block Block { get; set; }
+        public PlayBlock Block { get; set; }
 
         public Color Color { get; set; }
     }

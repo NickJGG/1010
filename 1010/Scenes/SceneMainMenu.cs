@@ -10,6 +10,7 @@ namespace _1010 {
     public class SceneMainMenu : Scene {
         public SceneMainMenu() : base("Main Menu") {
             PlayHitbox = new Rectangle(new Point(20), new Point(100));
+            BlockCreationHitbox = new Rectangle(new Point(140, 20), new Point(100));
         }
         public void ChangeState(Action action, State state) {
             Action = action;
@@ -20,6 +21,8 @@ namespace _1010 {
             if (Mouse.LeftMouseDown && Mouse.CanPress) {
                 if (PlayHitbox.Contains(Mouse.Position))
                     Manager.SwitchScene(new SceneGame());
+                else if (BlockCreationHitbox.Contains(Mouse.Position))
+                    Manager.SwitchScene(new SceneBlockCreation());
             }
 
             base.Update(gt);
@@ -30,8 +33,12 @@ namespace _1010 {
 
             sb.Draw(BlankPixel, PlayHitbox.Location.ToVector2(), new Rectangle(Point.Zero, PlayHitbox.Size), Color.Gray);
             sb.DrawString(FontMedium, "Play", new Vector2(30), Color.White);
+
+            sb.Draw(BlankPixel, BlockCreationHitbox.Location.ToVector2(), new Rectangle(Point.Zero, BlockCreationHitbox.Size), Color.Gray);
+            sb.DrawString(FontMedium, "Block\nCreation", new Vector2(150, 20), Color.White);
         }
 
         public Rectangle PlayHitbox { get; set; }
+        public Rectangle BlockCreationHitbox { get; set; }
     }
 }

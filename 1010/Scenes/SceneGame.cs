@@ -13,6 +13,12 @@ namespace _1010 {
             Camera.Zoom = 1f;
             Mouse.DrawMouse = false;
         }
+        public SceneGame(Save save) : base("Game") {
+            Save = save;
+
+            Camera.Zoom = 1f;
+            Mouse.DrawMouse = false;
+        }
 
         public override void Update(GameTime gt) {
             Save.Update(gt);
