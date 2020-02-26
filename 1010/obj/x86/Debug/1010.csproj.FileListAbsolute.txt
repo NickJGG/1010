@@ -1,0 +1,103 @@
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\obj\x86\Debug\1010.csprojResolveAssemblyReference.cache
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\Content\blankPixel.xnb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\Content\spritesheet.xnb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\click.xnb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\mouse.xnb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\mouseHover.xnb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\normal.xnb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\1010.exe
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\1010.pdb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\MonoGame.Framework.dll
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.dll
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XInput.dll
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.RawInput.dll
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\MonoGame.Framework.xml
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.xml
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XInput.xml
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.RawInput.xml
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\obj\x86\Debug\1010.exe
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\obj\x86\Debug\1010.pdb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\font15.xnb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\large.xnb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\medium.xnb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\small.xnb
+P:\Computer Programming\Nicholas.Gilliam\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\tiny.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\blankPixel.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\spritesheet.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\font15.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\large.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\medium.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\small.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\tiny.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\click.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\mouse.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\mouseHover.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\normal.xnb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\1010.exe
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\1010.pdb
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\MonoGame.Framework.dll
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.dll
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XInput.dll
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\MonoGame.Framework.xml
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.xml
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XInput.xml
+E:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+E:\Projects\C#\1010\1010\obj\x86\Debug\1010.csprojResolveAssemblyReference.cache
+E:\Projects\C#\1010\1010\obj\x86\Debug\1010.exe
+E:\Projects\C#\1010\1010\obj\x86\Debug\1010.pdb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\font15.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\large.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\medium.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\small.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\silkscreen\tiny.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\click.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\mouse.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\mouseHover.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\mouse\normal.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\blankPixel.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\spritesheet.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\1010.exe
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\1010.pdb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\MonoGame.Framework.dll
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.dll
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XInput.dll
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\MonoGame.Framework.xml
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.xml
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\SharpDX.XInput.xml
+D:\Projects\C#\1010\1010\obj\x86\Debug\1010.csprojAssemblyReference.cache
+D:\Projects\C#\1010\1010\obj\x86\Debug\1010.csproj.CopyComplete
+D:\Projects\C#\1010\1010\obj\x86\Debug\1010.exe
+D:\Projects\C#\1010\1010\obj\x86\Debug\1010.pdb

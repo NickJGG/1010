@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>E:/Projects/C#/1010/1010/Content/blankPixel.png</File>
+    <File>E:/Projects/C#/1010/1010/Content/spritesheet.png</File>
+    <File>E:/Projects/C#/1010/1010/Content/mouse/click.png</File>
+    <File>E:/Projects/C#/1010/1010/Content/mouse/mouse.png</File>
+    <File>E:/Projects/C#/1010/1010/Content/mouse/mouseHover.png</File>
+    <File>E:/Projects/C#/1010/1010/Content/mouse/normal.png</File>
+    <File>E:/Projects/C#/1010/1010/Content/fonts/silkscreen/font15.spritefont</File>
+    <File>E:/Projects/C#/1010/1010/Content/fonts/silkscreen/large.spritefont</File>
+    <File>E:/Projects/C#/1010/1010/Content/fonts/silkscreen/medium.spritefont</File>
+    <File>E:/Projects/C#/1010/1010/Content/fonts/silkscreen/small.spritefont</File>
+    <File>E:/Projects/C#/1010/1010/Content/fonts/silkscreen/tiny.spritefont</File>
+  </SourceFiles>
+</SourceFileCollection>
