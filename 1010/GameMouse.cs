@@ -15,8 +15,8 @@ namespace _1010 {
             Enabled = true;
             CanPress = true;
 
-            ImageNormal = c.Load<Texture2D>("mouse/normal");
-            ImageClick = c.Load<Texture2D>("mouse/click");
+            ImageNormal = c.Load<Texture2D>("mouse/mouse");
+            ImageClick = c.Load<Texture2D>("mouse/mouseHover");
 
             int r = Utilities.Next(0, 255), g = Utilities.Next(r / 2, 255 - r / 2), b = Utilities.Next(g / 2, 255 - g / 2);
 
@@ -35,7 +35,7 @@ namespace _1010 {
         public void Update() {
             MouseState state = GetState();
 
-            CanPress = !LeftMouseDown;
+            CanPress = !LeftMouseDown && !RightMouseDown;
             CanType = Keyboard.GetState().GetPressedKeys().Length == 0;
 
             Position = Enabled ? new Vector2(state.Position.X + Camera.Position.X, state.Position.Y + Camera.Position.Y) : Position;

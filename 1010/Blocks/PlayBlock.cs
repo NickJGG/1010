@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace _1010 {
     public class PlayBlock : Block {
-        public PlayBlock(Point gridSize, List<int[]> obstacles = null) : base(gridSize, obstacles) {
-            Bits = new Bit[gridSize.X, gridSize.Y];
+        public PlayBlock(List<int[]> spots, List<int[]> obstacles = null) : base(spots, obstacles) {
+            Bits = new List<Bit>();
         }
 
         public override void Update(GameTime gt) {
@@ -19,9 +19,21 @@ namespace _1010 {
                 PlacingBits.ForEach(x => x.Update(gt));
 
                 if (Mouse.LeftMouseDown && Mouse.CanPress) {
+                    Console.WriteLine(CanPlaceBits());
+
+                    foreach (Bit b in PlacingBits) {
+                        if (HitsOtherBits(b)) {
+                            //Console.WriteLine(b.LocalCoordinates.ToString());
+                            //Console.WriteLine(b.Coordinates.ToString());
+                        }
+                    }
+
                     if (CanPlaceBits()) {
                         PlaceBits();
                     }
+
+                    foreach (Bit bit in Bits)
+                        Console.WriteLine("PLACED BIT: " + bit.Coordinates);
                 }
             } else {
                 StartPlacing();
@@ -40,15 +52,20 @@ namespace _1010 {
                 bitsToRemove.ForEach(x => FinalizingBits.Remove(x));
             }
         }
-
-        public bool InGrid(Bit b) {
-            return InGrid(b.Coordinates);
-        }
+        
         public bool HitsOtherBits(Bit b) {
-            for (int i = 0; i < GridSize.X; i++) {
+            /*for (int i = 0; i < GridSize.X; i++) {
                 for (int j = 0; j < GridSize.Y; j++) {
                     if (Bits[i, j] != null && i == b.Coordinates.X && j == b.Coordinates.Y)
                         return true;
+                }
+            }*/
+
+            foreach (Bit bit in Bits) {
+                if (bit.Coordinates.X == b.Coordinates.X && bit.Coordinates.Y == b.Coordinates.Y) {
+                    //Console.WriteLine(bit.Coordinates.ToString() + " // " + b.Coordinates.ToString()    );
+
+                    return true;
                 }
             }
 
@@ -64,7 +81,7 @@ namespace _1010 {
             return false;
         }
         public bool CanPlaceBit(Bit b) {
-            return InGrid(b) && !HitsOtherBits(b) && !HitsObstacles(b);
+            return SpotExists(b.Coordinates) && !HitsOtherBits(b) && !HitsObstacles(b);
         }
         public bool CanPlaceBits() {
             foreach (Bit b in PlacingBits) {
@@ -90,77 +107,82 @@ namespace _1010 {
             Placing = true;
         }
         public void PlaceBits() {
+            List<int> rowsToCheck = new List<int>(), colsToCheck = new List<int>();
+
             foreach (Bit b in PlacingBits) {
                 b.Position = b.PlacedPosition;
 
                 Bit newBit = new Bit(b.Color, b.LocalCoordinates, this) { Placed = true, Position = b.Position };
 
-                Bits[b.Coordinates.X, b.Coordinates.Y] = newBit;
+                Bits.Add(newBit);
 
                 FinalizingBits.Add(newBit);
+
+                if (!rowsToCheck.Contains(b.Coordinates.X))
+                    rowsToCheck.Add(b.Coordinates.X);
+                
+                if (!colsToCheck.Contains(b.Coordinates.Y))
+                    colsToCheck.Add(b.Coordinates.Y);
             }
 
             Placing = false;
 
-            CheckForClears();
+            CheckForClears(rowsToCheck, colsToCheck);
         }
-        public void CheckForClears() {
-            List<int> rows = new List<int>(),
-                        cols = new List<int>();
+        public void CheckForClears(List<int> rowsToCheck, List<int> colsToCheck) {
+            int score = 0, count = 0;
+            
+            List<int> rowsToRemove = new List<int>(), colsToRemove = new List<int>();
 
-            for (int i = 0; i < GridSize.X; i++) { // Check if there is a clearance in the X axis
-                bool clear = true;
+            foreach (int i in rowsToCheck) {
+                int numSpots = Spots.Where(x => x[0] == i).Count() - Obstacles.Where(x => x[0] == i).Count();
 
-                for (int j = 0; j < GridSize.Y && clear; j++) {
-                    if (Bits[i, j] == null && !ObstacleExists(i, j)) {
-                        clear = false;
-                    }
-                }
+                IEnumerable<Bit> matches = Bits.Where(x => x.Coordinates.X == i);
 
-                if (clear)
-                    rows.Add(i);
-            }
+                if (numSpots == matches.Count()) {
+                    rowsToRemove.Add(i);
 
-            for (int i = 0; i < GridSize.Y; i++) {// Check if there is a clearance in the Y axis
-                bool clear = true;
-
-                for (int j = 0; j < GridSize.X && clear; j++) {
-                    if (Bits[j, i] == null && !ObstacleExists(j, i)) {
-                        clear = false;
-                    }
-                }
-
-                if (clear)
-                    cols.Add(i);
-            }
-
-            foreach (int row in rows) { // Clear all completions
-                for (int i = 0; i < GridSize.Y; i++) {
-                    Bits[row, i] = null;
+                    score += matches.Count();
+                    count++;
                 }
             }
 
-            foreach (int col in cols) { // Clear all completions
-                for (int i = 0; i < GridSize.X; i++) {
-                    Bits[i, col] = null;
+            foreach (int i in colsToCheck) {
+                int numSpots = Spots.Where(x => x[1] == i).Count() - Obstacles.Where(x => x[1] == i).Count();
+
+                IEnumerable<Bit> matches = Bits.Where(x => x.Coordinates.Y == i);
+
+                if (numSpots == matches.Count()) {
+                    colsToRemove.Add(i);
+
+                    score += matches.Count();
+                    count++;
                 }
             }
+
+            foreach (int i in rowsToRemove)
+                Bits.RemoveAll(x => x.Coordinates.X == i);
+
+            foreach (int i in colsToRemove)
+                Bits.RemoveAll(x => x.Coordinates.Y == i);
+
+            Score += score * count;
         }
 
         public override void Draw(SpriteBatch sb) {
             base.Draw(sb);
 
-            for (int i = 0; i < Bits.GetLength(0); i++) {
-                for (int j = 0; j < Bits.GetLength(1); j++) {
-                    Bits[i, j]?.Draw(sb);
-                }
-            }
+            Bits.ForEach(x => x.Draw(sb));
 
             if (Placing) {
                 PlacingBits.ForEach(x => x.DrawHover(sb));
                 PlacingBits.ForEach(x => x.Draw(sb));
             }
+
+            sb.DrawString(FontMedium, "Score: " + Score, new Vector2(30), Color.Black);
         }
+
+        public int Score { get; set; }
 
         public bool Placing { get; set; }
 
@@ -186,9 +208,8 @@ namespace _1010 {
                 new BlockType(new int[,] { {1, 1}, {0, 1} }, Color.FromNonPremultiplied(87, 202, 132, 255)),
             };
 
-        public Bit[,] Bits { get; set; }
-
         public List<Bit> PlacingBits { get; set; } = new List<Bit>();
         public List<Bit> FinalizingBits { get; set; } = new List<Bit>();
+        public List<Bit> Bits { get; set; } = new List<Bit>();
     }
 }

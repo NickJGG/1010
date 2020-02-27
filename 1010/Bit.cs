@@ -43,7 +43,7 @@ namespace _1010 {
         public Point LocalCoordinates { get; set; }
         public Point Coordinates {
             get {
-                return new Vector2(((Mouse.Position.X - Block.Position.X) - (Mouse.Position.X - Block.Position.X) % (Block.BlockSize.X + Block.Spacing)) / (Block.BlockSize.X + Block.Spacing), ((Mouse.Position.Y - Block.Position.Y) - (Mouse.Position.Y - Block.Position.Y) % (Block.BlockSize.Y + Block.Spacing)) / (Block.BlockSize.Y + Block.Spacing)).ToPoint() + LocalCoordinates;
+                return new Vector2(((Position.X - Block.Position.X) - (Position.X - Block.Position.X) % (Block.BlockSize.X + Block.Spacing)) / (Block.BlockSize.X + Block.Spacing), ((Position.Y - Block.Position.Y) - (Position.Y - Block.Position.Y) % (Block.BlockSize.Y + Block.Spacing)) / (Block.BlockSize.Y + Block.Spacing)).ToPoint();
             }
         }
 

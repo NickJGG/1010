@@ -39,14 +39,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Bit.cs" />
-    <Compile Include="Block.cs" />
-    <Compile Include="BlockType.cs" />
+    <Compile Include="Blocks\Block.cs" />
+    <Compile Include="Blocks\BlockType.cs" />
     <Compile Include="Camera2D.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameMouse.cs" />
     <Compile Include="GameObject.cs" />
-    <Compile Include="ObstacleCreationBlock.cs" />
-    <Compile Include="PlayBlock.cs" />
+    <Compile Include="Blocks\ObstacleCreationBlock.cs" />
+    <Compile Include="Blocks\PlayBlock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Save.cs" />
