@@ -1,5 +1,7 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
 "D:/Projects/C#/1010/1010/Content/blankPixel.png","D:/Projects/C#/1010/1010/Content/bin/Windows/Content/blankPixel.xnb","TextureProcessor","Texture2DContent",156,89,0.5868115
+"D:/Projects/C#/1010/1010/Content/fonts/roboto/RegularMedium.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/Content/fonts/roboto/RegularMedium.xnb","FontDescriptionProcessor","SpriteFontContent",556,70673,0.2586153
+"D:/Projects/C#/1010/1010/Content/fonts/roboto/RegularSmall.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/Content/fonts/roboto/RegularSmall.xnb","FontDescriptionProcessor","SpriteFontContent",556,21521,0.264932
 "D:/Projects/C#/1010/1010/Content/fonts/silkscreen/font15.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/Content/fonts/silkscreen/font15.xnb","FontDescriptionProcessor","SpriteFontContent",1745,21521,0.3087615
 "D:/Projects/C#/1010/1010/Content/fonts/silkscreen/large.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/Content/fonts/silkscreen/large.xnb","FontDescriptionProcessor","SpriteFontContent",1748,70673,0.0557838
 "D:/Projects/C#/1010/1010/Content/fonts/silkscreen/medium.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/Content/fonts/silkscreen/medium.xnb","FontDescriptionProcessor","SpriteFontContent",1748,37905,0.0669784

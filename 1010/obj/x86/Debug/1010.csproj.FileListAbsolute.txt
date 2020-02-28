@@ -101,3 +101,5 @@ D:\Projects\C#\1010\1010\obj\x86\Debug\1010.csprojAssemblyReference.cache
 D:\Projects\C#\1010\1010\obj\x86\Debug\1010.csproj.CopyComplete
 D:\Projects\C#\1010\1010\obj\x86\Debug\1010.exe
 D:\Projects\C#\1010\1010\obj\x86\Debug\1010.pdb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\roboto\RegularSmall.xnb
+D:\Projects\C#\1010\1010\bin\Windows\x86\Debug\Content\fonts\roboto\RegularMedium.xnb

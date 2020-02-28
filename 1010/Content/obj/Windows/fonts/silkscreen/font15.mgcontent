@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>E:/Projects/C#/1010/1010/Content/fonts/silkscreen/font15.spritefont</SourceFile>
+  <SourceFile>D:/Projects/C#/1010/1010/Content/fonts/silkscreen/font15.spritefont</SourceFile>
   <SourceTime>2017-03-12T15:32:56-04:00</SourceTime>
-  <DestFile>E:/Projects/C#/1010/1010/Content/bin/Windows/fonts/silkscreen/font15.xnb</DestFile>
-  <DestTime>2017-04-13T16:24:50.0975485-04:00</DestTime>
+  <DestFile>D:/Projects/C#/1010/1010/Content/bin/Windows/fonts/silkscreen/font15.xnb</DestFile>
+  <DestTime>2020-02-27T21:46:23.7916987-05:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
-  <ImporterTime>2017-03-01T10:05:36-05:00</ImporterTime>
+  <ImporterTime>2018-12-08T11:35:54-05:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
-  <ProcessorTime>2017-03-01T10:05:36-05:00</ProcessorTime>
+  <ProcessorTime>2018-12-08T11:35:54-05:00</ProcessorTime>
   <Parameters>
     <Key>TextureFormat</Key>
     <Value>Compressed</Value>

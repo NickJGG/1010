@@ -22,8 +22,8 @@ namespace _1010 {
             BlankPixel = Content.Load<Texture2D>("blankPixel");
             Spritesheet = Content.Load<Texture2D>("spritesheet");
 
-            FontSmall = Content.Load<SpriteFont>("fonts/silkscreen/small");
-            FontMedium = Content.Load<SpriteFont>("fonts/silkscreen/medium");
+            FontSmall = Content.Load<SpriteFont>("fonts/roboto/RegularSmall");
+            FontMedium = Content.Load<SpriteFont>("fonts/roboto/RegularMedium");
             FontLarge = Content.Load<SpriteFont>("fonts/silkscreen/large");
             FontTiny = Content.Load<SpriteFont>("fonts/silkscreen/tiny");
             Font15 = Content.Load<SpriteFont>("fonts/silkscreen/font15");

@@ -5,18 +5,22 @@
   <Config />
   <SourceFiles>
     <File>D:/Projects/C#/1010/1010/Content/blankPixel.png</File>
-    <File>D:/Projects/C#/1010/1010/Content/spritesheet.png</File>
-    <File>D:/Projects/C#/1010/1010/Content/mouse/click.png</File>
-    <File>D:/Projects/C#/1010/1010/Content/mouse/mouse.png</File>
-    <File>D:/Projects/C#/1010/1010/Content/mouse/mouseHover.png</File>
-    <File>D:/Projects/C#/1010/1010/Content/mouse/normal.png</File>
+    <File>D:/Projects/C#/1010/1010/Content/fonts/roboto/RegularMedium.spritefont</File>
+    <File>D:/Projects/C#/1010/1010/Content/fonts/roboto/RegularSmall.spritefont</File>
     <File>D:/Projects/C#/1010/1010/Content/fonts/silkscreen/font15.spritefont</File>
     <File>D:/Projects/C#/1010/1010/Content/fonts/silkscreen/large.spritefont</File>
     <File>D:/Projects/C#/1010/1010/Content/fonts/silkscreen/medium.spritefont</File>
     <File>D:/Projects/C#/1010/1010/Content/fonts/silkscreen/small.spritefont</File>
     <File>D:/Projects/C#/1010/1010/Content/fonts/silkscreen/tiny.spritefont</File>
+    <File>D:/Projects/C#/1010/1010/Content/mouse/click.png</File>
+    <File>D:/Projects/C#/1010/1010/Content/mouse/mouse.png</File>
+    <File>D:/Projects/C#/1010/1010/Content/mouse/mouseHover.png</File>
+    <File>D:/Projects/C#/1010/1010/Content/mouse/normal.png</File>
+    <File>D:/Projects/C#/1010/1010/Content/spritesheet.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

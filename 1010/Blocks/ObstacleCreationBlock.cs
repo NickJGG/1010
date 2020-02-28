@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace _1010 {
     public class ObstacleCreationBlock : Block {
-        public ObstacleCreationBlock(List<int[]> spots, List<int[]> obstacles = null) : base(spots, obstacles) {
+        public ObstacleCreationBlock(List<int[]> spots, List<int[]> obstacles = null) : base(spots, null, obstacles) {
 
         }
 

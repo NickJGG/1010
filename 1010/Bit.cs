@@ -4,7 +4,7 @@ using System;
 
 namespace _1010 {
     public class Bit : GameObject {
-        public Bit(Color color, Point coords, PlayBlock block) {
+        public Bit(Color color, Point coords, PlacementBlock block) {
             Color = color;
             Block = block;
 
@@ -56,7 +56,7 @@ namespace _1010 {
             }
         }
 
-        public PlayBlock Block { get; set; }
+        public PlacementBlock Block { get; set; }
 
         public Color Color { get; set; }
     }

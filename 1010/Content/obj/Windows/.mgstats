@@ -1,0 +1,14 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/Projects/C#/1010/1010/Content/blankPixel.png","D:/Projects/C#/1010/1010/Content/bin/Windows/blankPixel.xnb","TextureProcessor","Texture2DContent",156,89,0.1099649
+"D:/Projects/C#/1010/1010/Content/fonts/roboto/RegularMedium.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/fonts/roboto/RegularMedium.xnb","FontDescriptionProcessor","SpriteFontContent",556,70673,0.3848756
+"D:/Projects/C#/1010/1010/Content/fonts/roboto/RegularSmall.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/fonts/roboto/RegularSmall.xnb","FontDescriptionProcessor","SpriteFontContent",556,21521,0.2748962
+"D:/Projects/C#/1010/1010/Content/fonts/silkscreen/font15.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/fonts/silkscreen/font15.xnb","FontDescriptionProcessor","SpriteFontContent",1745,21521,0.150951
+"D:/Projects/C#/1010/1010/Content/fonts/silkscreen/large.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/fonts/silkscreen/large.xnb","FontDescriptionProcessor","SpriteFontContent",1748,70673,0.0339891
+"D:/Projects/C#/1010/1010/Content/fonts/silkscreen/medium.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/fonts/silkscreen/medium.xnb","FontDescriptionProcessor","SpriteFontContent",1748,37905,0.0319893
+"D:/Projects/C#/1010/1010/Content/fonts/silkscreen/small.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/fonts/silkscreen/small.xnb","FontDescriptionProcessor","SpriteFontContent",1748,37905,0.0319903
+"D:/Projects/C#/1010/1010/Content/fonts/silkscreen/tiny.spritefont","D:/Projects/C#/1010/1010/Content/bin/Windows/fonts/silkscreen/tiny.xnb","FontDescriptionProcessor","SpriteFontContent",1746,13329,0.0239919
+"D:/Projects/C#/1010/1010/Content/mouse/click.png","D:/Projects/C#/1010/1010/Content/bin/Windows/mouse/click.xnb","TextureProcessor","Texture2DContent",21567,3925,0.0069859
+"D:/Projects/C#/1010/1010/Content/mouse/mouse.png","D:/Projects/C#/1010/1010/Content/bin/Windows/mouse/mouse.xnb","TextureProcessor","Texture2DContent",221,853,0.0059977
+"D:/Projects/C#/1010/1010/Content/mouse/mouseHover.png","D:/Projects/C#/1010/1010/Content/bin/Windows/mouse/mouseHover.xnb","TextureProcessor","Texture2DContent",279,1685,0.0089973
+"D:/Projects/C#/1010/1010/Content/mouse/normal.png","D:/Projects/C#/1010/1010/Content/bin/Windows/mouse/normal.xnb","TextureProcessor","Texture2DContent",21326,3925,0.0079969
+"D:/Projects/C#/1010/1010/Content/spritesheet.png","D:/Projects/C#/1010/1010/Content/bin/Windows/spritesheet.xnb","TextureProcessor","Texture2DContent",6216,2073685,0.0820395
